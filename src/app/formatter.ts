@@ -1,8 +1,8 @@
 import * as ansi2HTML from 'ansi2html'
-import * as escapeHTML from 'escape-html'
+const escapeHTML = require('escape-html')
 import { IMonitor } from './Store'
 
-function blankLine(val: string) {
+function blankLine(val: any) {
   return val.trim() === '' ? '&nbsp;' : val
 }
 
